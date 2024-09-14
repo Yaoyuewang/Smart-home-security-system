@@ -13,7 +13,7 @@ To combat this issue, we propose a smart home security system with two modes: No
 
 Below is a block diagram of our circuit: 
 
-![Block diagram of smart home security circuit](images/block_diagram.png)
+<img src="images/block_diagram.png" alt="Block diagram of smart home security circuit" width="500">
 
 ## Hardware and Connections
 
@@ -54,7 +54,7 @@ The microcontroller was used to interface all our hardware and software together
 Our software employs a state machine design to handle the system logic and user interactions. 
 Below is our state machine diagram:
 
-![State machine diagram of smart home security circuit](images/state_diagram.png)
+<img src="images/state_diagram.png" alt="State machine diagram" width="300">
 
 * **Initial setup:** The user sets the current date and time on the RTC using the keypad and the LCD panel. The time is then updated indefinitely and does not need to be set again.
 *  **Passcode Setup:** The user creates a passcode using the I2C keypad which is used to arm and disarm the system. The code currently is 4 digits long as set by the code but it can be changed to be 32 digits long. 
