@@ -2,7 +2,7 @@
 
 **Spring2024:** Ty Majam, Yaoyue Wang, Kelvin Cao,
 
-#Problem Statement 
+## Problem Statement 
 Robberies within the United States have been consistent throughout the past few decades. According to CNBC, ⅔ of home invasions happen when the family is on vacation as appliances such as lights or TV are silent for consecutive days, hinting to the thieves that no one is home.
 
 ## Project Overview 
