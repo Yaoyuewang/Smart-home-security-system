@@ -13,7 +13,7 @@ To combat this issue, we propose a smart home security system with two modes: No
 
 Below is a block diagram of our circuit: 
 
-<img src="images/block_diagram.png" alt="Block diagram of smart home security circuit" width="500">
+![Block diagram of smart home security circuit](images/block_diagram.jpg)
 
 ## Hardware and Connections
 
@@ -26,8 +26,8 @@ Key hardware elements:
 * Real-time clock (RTC) (Input): Provides time to manage the modes 
 * LCD panel (Output): Displays current time, system mode, system messages, countdown for the alarm, and flashes warning messages when incorrect passwords are entered
 * Raspberry Pi 4 (Output): Sends notifications (texts/emails) and plays sound through a connected speaker
-* LEDs (Output): Simulates room occupancy or flashes when alarm is triggered
-* Speaker (Output): Plays common household sounds and alarm sound when intruder is detected
+* LEDs (Output): Simulates room occupancy or flashes when an alarm is triggered
+* Speaker (Output): Plays common household sounds and alarm sounds when an intruder is detected
 
 ## Pin Connections 
 The microcontroller was used to interface all our hardware and software together. Below are the pin connections that we used. The connections marked with 🔴 must be placed in that specific pin while the other pins are flexible. 
@@ -54,7 +54,7 @@ The microcontroller was used to interface all our hardware and software together
 Our software employs a state machine design to handle the system logic and user interactions. 
 Below is our state machine diagram:
 
-<img src="images/state_diagram.png" alt="State machine diagram" width="300">
+![State machine diagram](images/state_diagram.jpg)
 
 * **Initial setup:** The user sets the current date and time on the RTC using the keypad and the LCD panel. The time is then updated indefinitely and does not need to be set again.
 *  **Passcode Setup:** The user creates a passcode using the I2C keypad which is used to arm and disarm the system. The code currently is 4 digits long as set by the code but it can be changed to be 32 digits long. 
